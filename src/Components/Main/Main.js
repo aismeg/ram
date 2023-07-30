@@ -8,6 +8,8 @@ export const Main = () => (
             <div className="content">
                 <Content />
                 <Content />
+                <Content />
+                <Content />
             </div>
         </div>
     </main>

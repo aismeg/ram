@@ -1,5 +1,24 @@
 .card {
-    background-color: white;
-    height: 300px;
+    background: #31363bcc;
+    height: auto;
     width: 300px;
+    border-radius: 5px;
+}
+
+.character {
+    border-radius: 10px 10px 0 0;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.info,
+.status {
+    margin: 10px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
 }

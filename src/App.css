@@ -1,5 +1,13 @@
+* {
+    color: white;
+}
+
 body {
-    background-color: rgb(17, 11, 23);
+    background: #1b1b1d;
+    margin: 0;
+}
+
+h2 {
     margin: 0;
 }
 

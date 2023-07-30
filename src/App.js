@@ -3,6 +3,7 @@ import '../src/App.css';
 import { Main } from "./Components/Main/Main";
 import { Sidebar } from "./Components/SIdebar/Sidebar";
 import { useCharacter } from "./data/useCharacter";
+import { Lastbar } from "./Components/Lastbar/Lastbar";
 
 function App() {
   console.log(useCharacter().data);
@@ -10,6 +11,7 @@ function App() {
     <div className="parent">
       <Sidebar />
       <Main />
+      <Lastbar />
     </div>
   )
 }

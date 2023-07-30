@@ -6,8 +6,8 @@
     position: sticky;
     top: 60px;
     padding: 24px;
-    border-right: 1px solid rgba(46, 41, 51, 0.08);
-    background-color: rgb(68, 67, 76);
+    border-right: 1px solid rgb(191, 189, 189);
+    background-color: #242526;
     min-width: 300px;
     height: 100vh;
 }
