@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(17, 11, 23);
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+}

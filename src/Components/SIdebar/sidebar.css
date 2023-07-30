@@ -1,0 +1,23 @@
+.menu {
+    display: block;
+}
+
+.nav-menu {
+    position: sticky;
+    top: 60px;
+    padding: 24px;
+    border-right: 1px solid rgba(46, 41, 51, 0.08);
+    background-color: rgb(68, 67, 76);
+    min-width: 300px;
+    height: 100vh;
+}
+
+.header {
+    height: auto;
+    max-width: 260px;
+    display: block;
+}
+
+.icon {
+    fill: black;
+}
