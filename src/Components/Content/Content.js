@@ -9,7 +9,7 @@ export const Content = () => (
             <span className="gender-spec">male - unknown</span>
         </div>
         <div className="status">
-            <span className="top">status</span>
+            <span className="top">status:</span>
             <span className="bottom">unknown</span>
         </div>
     </article>

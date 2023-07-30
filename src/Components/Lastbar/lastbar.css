@@ -3,8 +3,28 @@
 }
 
 .nav-buttons {
-    position: sticky;
     min-width: 150px;
     height: 100%;
-    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.arrows {
+    position: fixed;
+    display: flex;
+    gap: 30px;
+}
+
+.arrow {
+    height: auto;
+    width: 40px;
+    color: white;
+}
+
+.arrow-right {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
 }

@@ -2,7 +2,8 @@
     background: #31363bcc;
     height: auto;
     width: 300px;
-    border-radius: 5px;
+    border-radius: 10px 10px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
 
 .character {
@@ -10,12 +11,12 @@
 }
 
 .name {
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .info,
 .status {
-    margin: 10px;
+    margin: 20px;
 }
 
 .status {
