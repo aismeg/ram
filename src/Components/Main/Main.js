@@ -1,13 +1,15 @@
 import React from "react";
 import './main.css';
+import { Pagebar } from "../Pagebar/Pagebar";
 
-export const Main = ({ characters }) => {
+export const Main = (pagination) => {
+    const { characters } = pagination;
 
     return (
         <main className="main">
             <div className="container content-container">
                 <div className="content">
-                    {characters && characters.map((char, i) => (
+                    {characters.map((char, i) => (
                         <article key={i} className="card">
                             <img className="character" src={char.image} alt="character" />
                             <div className="info">
@@ -22,6 +24,7 @@ export const Main = ({ characters }) => {
                     ))}
                 </div>
             </div>
+            <Pagebar {...pagination} />
         </main>
     )
 }

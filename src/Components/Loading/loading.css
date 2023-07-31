@@ -1,0 +1,14 @@
+.sorry {
+    width: 5%;
+}
+
+.loading-text {
+    font-size: 50px;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

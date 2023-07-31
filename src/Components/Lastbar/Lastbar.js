@@ -7,8 +7,8 @@ export const Lastbar = ({ nextPage, prevPage, prevPageUrl, nextPageUrl }) => (
     <aside className="buttons">
         <nav className="nav-buttons container">
             <div className="arrows">
-                {prevPage && (<img onClick={prevPageUrl ? prevPage : null} className="arrow arrow-left" src={arrowLeft} alt="arrow" />)}
-                {nextPage && (<img onClick={nextPageUrl ? nextPage : null} className="arrow arrow-right" src={arrowRight} alt="arrow" />)}
+                <img onClick={prevPageUrl ? prevPage : null} className="arrow arrow-left" src={arrowLeft} alt="arrow" />
+                <img onClick={nextPageUrl ? nextPage : null} className="arrow arrow-right" src={arrowRight} alt="arrow" />
             </div>
         </nav>
     </aside>
