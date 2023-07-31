@@ -5,15 +5,14 @@ import { Sidebar } from "./Components/Sidebar/Sidebar";
 import { Lastbar } from "./Components/Lastbar/Lastbar";
 import { usePagination } from "./Components/Hooks/usePagination";
 
-
 function App() {
   const pagination = usePagination();
 
   return (
     <div className="parent">
       <Sidebar />
-      {pagination.characters && <Main {...pagination} />}
-      <Lastbar />
+      {<Main {...pagination} />}
+      {<Lastbar {...pagination} />}
     </div >
   )
 }

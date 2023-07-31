@@ -1,13 +1,14 @@
 import React from "react";
 import './lastbar.css';
-import arrow from '../../img/arrow.svg';
+import arrowLeft from '../../img/arrow-left.svg';
+import arrowRight from '../../img/arrow-right.svg';
 
-export const Lastbar = () => (
+export const Lastbar = ({ nextPage, prevPage, prevPageUrl, nextPageUrl }) => (
     <aside className="buttons">
         <nav className="nav-buttons container">
             <div className="arrows">
-                <img className="arrow arrow-right" src={arrow} alt="arrow" />
-                <img className="arrow arrow-left" src={arrow} alt="arrow" />
+                {prevPage && (<img onClick={prevPageUrl ? prevPage : null} className="arrow arrow-left" src={arrowLeft} alt="arrow" />)}
+                {nextPage && (<img onClick={nextPageUrl ? nextPage : null} className="arrow arrow-right" src={arrowRight} alt="arrow" />)}
             </div>
         </nav>
     </aside>

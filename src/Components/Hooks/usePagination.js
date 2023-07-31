@@ -37,5 +37,5 @@ export const usePagination = () => {
     }
     if (loading) return "Loading...";
 
-    return { characters, nextPage, prevPage, goToPage, pages };
+    return { characters, nextPage, prevPage, goToPage, nextPageUrl, prevPageUrl, pages };
 }

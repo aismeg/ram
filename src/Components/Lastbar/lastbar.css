@@ -15,17 +15,12 @@
 
 .arrows {
     display: flex;
-    gap: 50px;
+    gap: 25px;
 }
 
 .arrow {
     height: auto;
-    width: 30px;
+    max-width: 30px;
     color: white;
-}
-
-.arrow-right {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-
+    cursor: pointer;
 }
