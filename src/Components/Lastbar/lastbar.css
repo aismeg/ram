@@ -1,20 +1,21 @@
 .buttons {
     margin-right: 50px;
-}
-
-.nav-buttons {
-    min-width: 150px;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    width: 540px;
+}
+
+.nav-buttons {
+    position: fixed;
+    height: auto;
+    margin: 0;
+    top: 350px;
 }
 
 .arrows {
-    position: fixed;
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 
 .arrow {

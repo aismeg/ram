@@ -112,3 +112,9 @@ h2 {
 .parent {
     display: flex;
 }
+
+.container {
+    display: block;
+    margin-right: 50px;
+    margin-left: 50px;
+}

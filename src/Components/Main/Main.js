@@ -1,22 +1,27 @@
 import React from "react";
 import './main.css';
 
-export const Main = () => (
-    <main className="main">
-        <div className="container">
-            <div className="content">
-                <article className="card">
-                    <img className="character" src="https://rickandmortyapi.com/api/character/avatar/81.jpeg" alt="character" />
-                    <div className="info">
-                        <h2 className="name">character</h2>
-                        <span className="gender-spec">male - unknown</span>
-                    </div>
-                    <div className="status">
-                        <span className="top">status:</span>
-                        <span className="bottom">unknown</span>
-                    </div>
-                </article>
+export const Main = ({ characters }) => {
+
+    return (
+        <main className="main">
+            <div className="container content-container">
+                <div className="content">
+                    {characters && characters.map((char, i) => (
+                        <article key={i} className="card">
+                            <img className="character" src={char.image} alt="character" />
+                            <div className="info">
+                                <h2 className="name">{char.name}</h2>
+                                <span className="gender-species">{char.gender} - {char.species}</span>
+                            </div>
+                            <div className="status">
+                                <span className="top">Status:</span>
+                                <span className="bottom">{char.status}</span>
+                            </div>
+                        </article>
+                    ))}
+                </div>
             </div>
-        </div>
-    </main>
-)
+        </main>
+    )
+}
