@@ -3,19 +3,19 @@ import '../src/App.css';
 import { Main } from "./Components/Main/Main";
 import { Sidebar } from "./Components/Sidebar/Sidebar";
 import { Lastbar } from "./Components/Lastbar/Lastbar";
-import { usePagination } from "./Components/Hooks/usePagination";
+import { useDataSet } from "./Components/Hooks/useDataSet";
 import { Loading } from "./Components/Loading/Loading";
 
 function App() {
-  const pagination = usePagination();
+  const data = useDataSet();
 
   return (
     <div className="parent">
       <Sidebar />
-      {pagination.characters ?
+      {data.characters ?
         <>
-          <Main {...pagination} />
-          <Lastbar {...pagination} />
+          <Main data={data} />
+          <Lastbar {...data} />
         </>
         :
         <Loading />

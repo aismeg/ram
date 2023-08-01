@@ -1,30 +1,17 @@
 import React from "react";
 import './main.css';
 import { Pagebar } from "../Pagebar/Pagebar";
+import { Modal } from "../Modal/Modal";
+import { Card } from "../Card/Card"
 
-export const Main = (pagination) => {
-    const { characters } = pagination;
-
-    return (
-        <main className="main">
-            <div className="container content-container">
-                <div className="content">
-                    {characters.map((char, i) => (
-                        <article key={i} className="card">
-                            <img className="character" src={char.image} alt="character" />
-                            <div className="info">
-                                <h2 className="name">{char.name}</h2>
-                                <span className="gender-species">{char.gender} - {char.species}</span>
-                            </div>
-                            <div className="status">
-                                <span className="top">Status:</span>
-                                <span className="bottom">{char.status}</span>
-                            </div>
-                        </article>
-                    ))}
-                </div>
+export const Main = ({ data }) => (
+    <main className="main">
+        <div className="container content-container">
+            <div className="content">
+                <Card {...data} />
             </div>
-            <Pagebar {...pagination} />
-        </main>
-    )
-}
+            <Modal {...data} />
+        </div>
+        <Pagebar {...data} />
+    </main>
+)

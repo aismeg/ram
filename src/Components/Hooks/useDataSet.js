@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-export const usePagination = () => {
+export const useDataSet = () => {
     const [characters, setCharacters] = useState(null);
-    const [currentPageUrl, setCurrentPageUrl] = useState('https://rickandmortyapi.com/api/character');
+    const [currentPageUrl, setCurrentPageUrl] = useState('https://rickandmortyapi.com/api/character?page=1');
     const [nextPageUrl, setNextPageUrl] = useState();
     const [prevPageUrl, setPrevPageUrl] = useState();
     const [pages, setPages] = useState();
@@ -36,5 +36,5 @@ export const usePagination = () => {
         setCurrentPageUrl(`https://rickandmortyapi.com/api/character?page=${num}`)
     }
 
-    return { characters, nextPage, prevPage, goToPage, nextPageUrl, prevPageUrl, pages };
+    return { characters, nextPage, prevPage, goToPage, nextPageUrl, prevPageUrl, pages, currentPageUrl };
 }
