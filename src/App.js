@@ -1,26 +1,29 @@
 import React from "react";
 import '../src/App.css';
-import { Main } from "./Components/Main/Main";
+import { Pagebar } from "./Components/Pagebar/Pagebar";
+import { Modal } from "./Components/Modal/Modal";
+import { Card } from "./Components/Card/Card";
 import { Sidebar } from "./Components/Sidebar/Sidebar";
 import { Lastbar } from "./Components/Lastbar/Lastbar";
 import { useDataSet } from "./Components/Hooks/useDataSet";
-import { Loading } from "./Components/Loading/Loading";
+import { useContent } from "./Components/Hooks/useContent";
 
 function App() {
   const data = useDataSet();
+  const openItem = useContent();
 
   return (
     <div className="parent">
       <Sidebar />
-      {data.characters ?
-        <>
-          <Main data={data} />
-          <Lastbar {...data} />
-        </>
-        :
-        <Loading />
-      }
-    </div >
+      <main className="main">
+        <div className="container content-container">
+          <Card {...data} {...openItem} />
+          {openItem.openItem && <Modal {...openItem} {...data} />}
+        </div>
+        <Pagebar {...data} />
+      </main>
+      <Lastbar {...data} />
+    </div>
   )
 }
 
