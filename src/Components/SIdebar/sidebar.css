@@ -79,7 +79,6 @@ input:focus {
     border-bottom: 1px solid white;
     cursor: pointer;
     -webkit-transition: 0.3s;
-
     transition: 0.3s;
 }
 
@@ -90,7 +89,7 @@ input:focus {
 
 .break {
     height: 0.1px;
-    width: 60px;
+    width: 80px;
     margin-top: 5px;
     margin-bottom: 10px;
     background-color: #ffffff8a;
@@ -100,4 +99,36 @@ input:focus {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.flex-table {
+    display: inline-flex;
+
+}
+
+label {
+    cursor: pointer;
+    display: inline-table;
+    font-size: 16px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear {
+    width: 24px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.clear:hover {
+    filter: invert(50%);
 }

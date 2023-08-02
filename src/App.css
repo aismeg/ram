@@ -38,12 +38,12 @@ details>summary {
     outline: none;
 }
 
-summary {
-    font-size: 20px;
+details[open] {
+    cursor: unset;
 }
 
-label {
-    font-size: 18px;
+summary {
+    font-size: 20px;
 }
 
 details>summary::-webkit-details-marker {
@@ -85,6 +85,7 @@ button::-moz-focus-inner,
 [type="checkbox"] {
     box-sizing: border-box;
     padding: 0;
+    cursor: pointer;
 }
 
 [type="search"] {

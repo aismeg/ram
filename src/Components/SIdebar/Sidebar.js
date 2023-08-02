@@ -1,8 +1,9 @@
 import React from "react";
 import './sidebar.css';
+import trash from '../../img/trash.svg';
 
-export const Sidebar = ({ setName, setPage }) => {
-    let gender = ['Male', 'Female'];
+export const Sidebar = ({ setName, setPage, setGender }) => {
+    let gender = ['Male', 'Female', 'Genderless', 'Unknown'];
 
     return (
         <aside className="nav">
@@ -21,15 +22,32 @@ export const Sidebar = ({ setName, setPage }) => {
                         }} placeholder="Search for a character" />
                     </div>
                     <div className="filter-wrapper">
-                        <h2 className="filter-title">Filter</h2>
+                        <div className="title-block">
+                            <h2 className="filter-title">Filter</h2>
+                            <img class="clear" src={trash} fill="white" alt="trash"
+                                onClick={() => {
+                                    setName('');
+                                    setPage('');
+                                    setGender('');
+                                    window.location.reload(false);
+                                }}
+                            />
+                        </div>
                         <div className="filter-list">
                             <details className="filter filter-name">
                                 <summary>Gender</summary>
                                 <div className="break"></div>
-                                <div className="checkbox">
-                                    <input type="checkbox" id="male" />
-                                    <label htmlFor="male"></label>
-                                </div>
+                                {gender.map((gender, i) => (
+                                    <div key={i} className="checkbox">
+                                        <div className="flex-table">
+                                            <input onClick={(e) => {
+                                                setGender(e.target.id);
+                                                setPage(1);
+                                            }} type="checkbox" id={gender} />
+                                            <label htmlFor={gender}>{gender}</label>
+                                        </div>
+                                    </div>
+                                ))}
                             </details>
                             <details className="filter filter-species">
                                 <summary>Species</summary>
