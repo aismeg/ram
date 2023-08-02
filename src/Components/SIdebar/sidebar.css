@@ -105,14 +105,12 @@ input:focus {
 
 .flex-table {
     display: inline-flex;
-
 }
 
 label {
     cursor: pointer;
     display: inline-table;
     font-size: 16px;
-    -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -124,9 +122,22 @@ label {
 }
 
 .clear {
-    width: 24px;
+    width: 28px;
     filter: invert(100%);
+    display: inline-table;
+}
+
+.clear-button {
     cursor: pointer;
+    background: none;
+    border: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+.clear-button :active+.input-class::before {
+    content: " ";
+    display: none;
 }
 
 .clear:hover {

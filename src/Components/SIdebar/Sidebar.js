@@ -4,7 +4,6 @@ import trash from '../../img/trash.svg';
 
 export const Sidebar = ({ setName, setPage, setGender }) => {
     let gender = ['Male', 'Female', 'Genderless', 'Unknown'];
-
     return (
         <aside className="nav">
             <nav className="nav-container">
@@ -24,14 +23,14 @@ export const Sidebar = ({ setName, setPage, setGender }) => {
                     <div className="filter-wrapper">
                         <div className="title-block">
                             <h2 className="filter-title">Filter</h2>
-                            <img class="clear" src={trash} fill="white" alt="trash"
-                                onClick={() => {
-                                    setName('');
-                                    setPage('');
-                                    setGender('');
-                                    window.location.reload(false);
-                                }}
-                            />
+                            <button className="clear-button" onClick={(e) => {
+                                e.preventDefault();
+                                setName('');
+                                setPage('');
+                                setGender('');
+                            }}>
+                                <img className="clear" src={trash} fill="white" alt="trash" />
+                            </button>
                         </div>
                         <div className="filter-list">
                             <details className="filter filter-name">
@@ -41,9 +40,15 @@ export const Sidebar = ({ setName, setPage, setGender }) => {
                                     <div key={i} className="checkbox">
                                         <div className="flex-table">
                                             <input onClick={(e) => {
-                                                setGender(e.target.id);
-                                                setPage(1);
-                                            }} type="checkbox" id={gender} />
+                                                if (e.target.checked === true) {
+                                                    setGender(e.target.id);
+                                                    setPage(1);
+
+                                                } else {
+                                                    setGender('');
+                                                }
+                                            }} className="input-class" type="checkbox" id={gender} />
+                                            <span className="checkmark"></span>
                                             <label htmlFor={gender}>{gender}</label>
                                         </div>
                                     </div>

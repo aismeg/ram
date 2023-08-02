@@ -6,12 +6,11 @@ export const useDataSet = () => {
     const [nextPageUrl, setNextPageUrl] = useState();
     const [prevPageUrl, setPrevPageUrl] = useState();
     const [pages, setPages] = useState();
-
-    let [page, setPage] = useState(1);
-    let [name, setName] = useState('');
-    let [gender, setGender] = useState('');
-    let [species, setSpecies] = useState('');
-    let [type, setType] = useState('');
+    const [page, setPage] = useState(1);
+    const [name, setName] = useState('');
+    const [gender, setGender] = useState('');
+    const [species, setSpecies] = useState('');
+    const [type, setType] = useState('');
 
     useEffect(() => {
         let url = `https://rickandmortyapi.com/api/character?page=${page}&name=${name}&gender=${gender}&species=${species}&type=${type}`;
