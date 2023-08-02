@@ -35,6 +35,15 @@ img {
 
 details>summary {
     list-style: none;
+    outline: none;
+}
+
+summary {
+    font-size: 20px;
+}
+
+label {
+    font-size: 18px;
 }
 
 details>summary::-webkit-details-marker {

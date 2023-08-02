@@ -35,6 +35,10 @@ export const useDataSet = () => {
     const goToPage = num => {
         setCurrentPageUrl(`https://rickandmortyapi.com/api/character?page=${num}`)
     }
+    const goToChar = name => {
+        setCurrentPageUrl(`https://rickandmortyapi.com/api/character?page=${1}&name=${name}`)
 
-    return { characters, nextPage, prevPage, goToPage, nextPageUrl, prevPageUrl, pages, currentPageUrl };
+    }
+
+    return { characters, nextPage, prevPage, goToPage, goToChar, nextPageUrl, prevPageUrl, pages, currentPageUrl };
 }

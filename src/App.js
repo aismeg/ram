@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="parent">
-      <Sidebar />
+      <Sidebar {...data} />
       <main className="main">
         <div className="container content-container">
           <Card {...data} {...openItem} />
