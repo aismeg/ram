@@ -1,7 +1,7 @@
 import React from "react";
 import './sidebar.css';
 
-export const Sidebar = ({ goToChar }) => {
+export const Sidebar = ({ setName }) => {
     let gender = ['Male', 'Female'];
 
     return (
@@ -16,7 +16,7 @@ export const Sidebar = ({ goToChar }) => {
                     </div>
                     <div className="search-bar">
                         <input type="search" onChange={(e) => {
-                            goToChar(e.target.value);
+                            setName(e.target.value);
                         }} placeholder="Search for a character" />
                     </div>
                     <div className="filter-wrapper">

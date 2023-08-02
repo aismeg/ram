@@ -1,6 +1,5 @@
 import React from "react";
 import './card.css';
-import { Loading } from "../Loading/Loading";
 
 
 export const Card = ({ characters, setOpenItem }) => (
