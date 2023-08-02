@@ -39,5 +39,5 @@ export const useDataSet = () => {
         setCurrentPageUrl(prevPageUrl)
     }
 
-    return { characters, nextPage, prevPage, page, setPage, setGender, setName, nextPageUrl, prevPageUrl, pages, currentPageUrl };
+    return { characters, nextPage, prevPage, page, setPage, setGender, setSpecies, setType, setName, nextPageUrl, prevPageUrl, pages, currentPageUrl };
 }

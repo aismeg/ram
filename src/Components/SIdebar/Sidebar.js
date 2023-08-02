@@ -2,8 +2,21 @@ import React from "react";
 import './sidebar.css';
 import trash from '../../img/trash.svg';
 
-export const Sidebar = ({ setName, setPage, setGender }) => {
+export const Sidebar = ({ setName, setPage, setGender, setSpecies }) => {
     let gender = ['Male', 'Female', 'Genderless', 'Unknown'];
+    let species = [
+        "Human",
+        "Alien",
+        "Humanoid",
+        "Poopybutthole",
+        "Mythological",
+        "Unknown",
+        "Animal",
+        "Disease",
+        "Robot",
+        "Cronenberg",
+        "Planet",
+    ];
     return (
         <aside className="nav">
             <nav className="nav-container">
@@ -28,6 +41,7 @@ export const Sidebar = ({ setName, setPage, setGender }) => {
                                 setName('');
                                 setPage('');
                                 setGender('');
+                                setSpecies('');
                             }}>
                                 <img className="clear" src={trash} fill="white" alt="trash" />
                             </button>
@@ -56,6 +70,23 @@ export const Sidebar = ({ setName, setPage, setGender }) => {
                             </details>
                             <details className="filter filter-species">
                                 <summary>Species</summary>
+                                {species.map((species, i) => (
+                                    <div key={i} className="checkbox">
+                                        <div className="flex-table">
+                                            <input onClick={(e) => {
+                                                if (e.target.checked === true) {
+                                                    setSpecies(e.target.id);
+                                                    setPage(1);
+
+                                                } else {
+                                                    setSpecies('');
+                                                }
+                                            }} className="input-class" type="checkbox" id={species} />
+                                            <span className="checkmark"></span>
+                                            <label htmlFor={species}>{species}</label>
+                                        </div>
+                                    </div>
+                                ))}
                                 <div className="break"></div>
                             </details>
                             <details className="filter filter-gender">
