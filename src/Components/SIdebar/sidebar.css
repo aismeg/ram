@@ -33,3 +33,57 @@
     font-size: 30px;
     color: green;
 }
+
+.search-bar {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+[type="search"] {
+    min-height: 25px;
+    min-width: 300px;
+    background-color: #1f1f20;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 0px black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    box-shadow: unset;
+    background-color: #2f2f2f;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.filter:hover {
+    background-color: #313131;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.filter {
+    padding-top: 10px;
+    min-height: 30px;
+    max-width: 300px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+
+    transition: 0.3s;
+}
+
+.filter-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+}

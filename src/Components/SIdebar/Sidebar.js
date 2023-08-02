@@ -11,6 +11,23 @@ export const Sidebar = () => (
                     </svg>
                     <span className="nav-title">RaM Gallery</span>
                 </div>
+                <div className="search-bar">
+                    <input type="search" placeholder="Search for a character" />
+                </div>
+                <div className="filter-wrapper">
+                    <h2 className="filter-title">Filter</h2>
+                    <div className="filter-list">
+                        <details className="filter filter-name">
+                            <summary>Gender</summary>
+                        </details>
+                        <details className="filter filter-species">
+                            <summary>Species</summary>
+                        </details>
+                        <details className="filter filter-gender">
+                            <summary>Type</summary>
+                        </details>
+                    </div>
+                </div>
             </div>
         </nav>
     </aside>
