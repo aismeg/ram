@@ -7,6 +7,7 @@ import { Sidebar } from "./Components/Sidebar/Sidebar";
 import { Lastbar } from "./Components/Lastbar/Lastbar";
 import { useDataSet } from "./Components/Hooks/useDataSet";
 import { useContent } from "./Components/Hooks/useContent";
+import { Loading } from "./Components/Loading/Loading";
 
 function App() {
   const data = useDataSet();
@@ -15,13 +16,17 @@ function App() {
   return (
     <div className="parent">
       <Sidebar {...data} />
-      <main className="main">
-        <div className="container content-container">
-          <Card {...data} {...openItem} />
-          {openItem.openItem && <Modal {...openItem} {...data} />}
-        </div>
-        <Pagebar {...data} />
-      </main>
+      {data.pages ?
+        <main className="main">
+          <div className="container content-container">
+            <Card {...data} {...openItem} />
+            {openItem.openItem && <Modal {...openItem} {...data} />}
+          </div>
+          <Pagebar {...data} />
+        </main>
+        :
+        <Loading />
+      }
       <Lastbar {...data} />
     </div>
   )

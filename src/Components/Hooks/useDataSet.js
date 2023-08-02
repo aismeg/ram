@@ -7,6 +7,8 @@ export const useDataSet = () => {
     const [prevPageUrl, setPrevPageUrl] = useState();
     const [pages, setPages] = useState();
 
+    console.log(currentPageUrl);
+
     useEffect(() => {
         const url = currentPageUrl;
 
@@ -37,8 +39,6 @@ export const useDataSet = () => {
     }
     const goToChar = name => {
         setCurrentPageUrl(`https://rickandmortyapi.com/api/character?page=${1}&name=${name}`)
-
     }
-
     return { characters, nextPage, prevPage, goToPage, goToChar, nextPageUrl, prevPageUrl, pages, currentPageUrl };
 }

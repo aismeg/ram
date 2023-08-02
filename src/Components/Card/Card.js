@@ -25,7 +25,9 @@ export const Card = ({ characters, setOpenItem }) => (
                     </article>
                 ))}
             </> :
-            <Loading />
+            <div className="nope">
+                <span className="nope-text">There is no character like this one</span>
+            </div>
         }
     </div>
 )
