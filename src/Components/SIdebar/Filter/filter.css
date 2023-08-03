@@ -43,7 +43,6 @@
 
 label {
     cursor: pointer;
-    font-size: 12px;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -53,10 +52,37 @@ summary {
     user-select: none;
 }
 
-.span-title {
-    font-size: 15px;
-}
 
 .column {
     columns: 2;
+}
+
+@media (max-width: 1440px) {
+    .span-title {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    @media (max-width: 1386px) {
+
+        @media (max-width: 1320px) {
+            .span-title {
+                font-size: 13px;
+            }
+
+            .break {
+                width: 50px;
+            }
+
+            label {
+                font-size: 10px;
+            }
+
+            @media (max-width: 1280px) {}
+
+        }
+    }
 }

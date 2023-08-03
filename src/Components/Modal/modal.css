@@ -63,20 +63,19 @@
     @media (max-width: 1386px) {
 
         @media (max-width: 1320px) {
-
-            @media (max-width: 1280px) {
-                .extended {
-                    width: 615px;
-                }
-
-                .overlay {
-                    width: 825px;
-                }
-
-                .gs-extended {
-                    font-size: 12px;
-                }
+            .extended {
+                width: 615px;
             }
+
+            .overlay {
+                width: 825px;
+            }
+
+            .gs-extended {
+                font-size: 12px;
+            }
+
+            @media (max-width: 1280px) {}
         }
     }
 }

@@ -80,32 +80,27 @@
 
         @media (max-width: 1320px) {
             .content-container {
-                margin-left: 25px;
-                margin-right: 20px;
+                margin-left: 50px;
+                margin-right: 50px;
             }
 
-            @media (max-width: 1280px) {
-                .content-container {
-                    margin-left: 25px;
-                    margin-right: 20px;
-                }
-
-                .card {
-                    width: 195px;
-                }
-
-                .content {
-                    gap: 15px;
-                }
-
-                .content-container {
-                    max-width: 825px;
-                }
-
-                .name {
-                    font-size: 15px;
-                }
+            .card {
+                width: 195px;
             }
+
+            .content {
+                gap: 15px;
+            }
+
+            .content-container {
+                max-width: 825px;
+            }
+
+            .name {
+                font-size: 15px;
+            }
+
+            @media (max-width: 1280px) {}
 
         }
     }

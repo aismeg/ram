@@ -66,7 +66,6 @@ input:focus {
 }
 
 .filter-title {
-    font-size: 20px;
     margin-bottom: 5px;
 }
 
@@ -76,31 +75,18 @@ input:focus {
     align-items: center;
 }
 
-.clear {
-    width: 28px;
-    filter: invert(100%);
-    display: inline-table;
-}
-
-.clear-button {
-    cursor: pointer;
-    background: none;
-    border: none;
-    display: inline-flex;
-    padding: 0;
-    outline: none;
-}
-
-.clear:hover {
-    filter: invert(50%);
-}
-
-@media (max-width: 1340px) {
-
+@media (max-width: 1440px) {
+    .filter-title {
+        font-size: 20px;
+    }
 
     @media (max-width: 1386px) {
 
         @media (max-width: 1320px) {
+
+            .filter-title {
+                font-size: 16px;
+            }
 
             @media (max-width: 1280px) {}
 

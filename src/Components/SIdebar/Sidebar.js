@@ -26,17 +26,6 @@ export const Sidebar = ({ setName, setPage, setGender, setStatus, setType, setSp
                     <div className="filter-wrapper">
                         <div className="title-block">
                             <h2 className="filter-title">Filter</h2>
-                            <button className="clear-button" onClick={(e) => {
-                                e.preventDefault();
-                                setName('');
-                                setPage('');
-                                setGender('');
-                                setSpecies('');
-                                setType('');
-                                setStatus('');
-                            }}>
-                                <img className="clear" src={trash} fill="white" alt="trash" />
-                            </button>
                         </div>
                         <div className="filter-list">
                             <Type setPage={setPage} setType={setType} />

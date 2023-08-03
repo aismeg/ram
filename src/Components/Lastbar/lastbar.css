@@ -39,17 +39,15 @@
 
         @media (max-width: 1320px) {
 
-
-            @media (max-width: 1280px) {
-
-                .arrow {
-                    width: 20px;
-                }
-
-                .cross {
-                    width: 40px;
-                }
+            .arrow {
+                width: 20px;
             }
+
+            .cross {
+                width: 40px;
+            }
+
+            @media (max-width: 1280px) {}
 
         }
     }

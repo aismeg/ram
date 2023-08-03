@@ -34,16 +34,15 @@
     @media (max-width: 1386px) {
 
         @media (max-width: 1320px) {
-
-            @media (max-width: 1280px) {
-                .page-bar-buttons {
-                    font-size: 14px;
-                }
-
-                .reset {
-                    width: 13px;
-                }
+            .page-bar-buttons {
+                font-size: 14px;
             }
+
+            .reset {
+                width: 13px;
+            }
+
+            @media (max-width: 1280px) {}
         }
     }
 }
