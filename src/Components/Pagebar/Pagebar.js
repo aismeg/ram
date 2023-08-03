@@ -16,7 +16,9 @@ export const Pagebar = ({ pages, page, setPage }) => {
         <div className="bar-wrapper">
             <div className="page-bar">
                 {pageButtons.length > 1 &&
-                    <img onClick={() => setPage(1)} className="reset" src={reset} alt="arrow" />}
+                    <button className="page-bar-buttons">
+                        <img onClick={() => setPage(1)} className="reset" src={reset} alt="reset" />
+                    </button>}
                 {pageButtons}
             </div>
         </div>

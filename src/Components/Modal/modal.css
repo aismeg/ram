@@ -6,10 +6,49 @@
     height: 100vh;
 }
 
+.ma-wrapper {
+    background-color: #353535;
+    border-radius: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
 .extended {
     background-color: #242526;
     position: absolute;
     top: 150px;
-    width: 1275px;
+    width: 1120px;
     border-radius: 10px;
+    display: flex;
+    left: 77.5px;
+}
+
+.extended-absolute {
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 6px -1px, rgba(0, 0, 0, 0.16) 0px 2px 4px;
+}
+
+.character-modal {
+    border-radius: 10px 0 0 0;
+}
+
+.more-about {
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.info-extended {
+    align-items: center;
+    gap: 15px !important;
+    flex-direction: row !important;
+}
+
+.gs-extended {
+    font-size: 25px;
+}
+
+.cb-wrapper {
+    position: fixed;
+    right: 353px;
+    margin-top: 30px;
 }

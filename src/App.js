@@ -5,6 +5,7 @@ import { Modal } from "./Components/Modal/Modal";
 import { Card } from "./Components/Card/Card";
 import { Sidebar } from "./Components/Sidebar/Sidebar";
 import { Lastbar } from "./Components/Lastbar/Lastbar";
+import { Closing } from "./Components/Lastbar/Closing";
 import { Loading } from "./Components/Loading/Loading";
 import { useDataSet } from "./Components/Hooks/useDataSet";
 import { useContent } from "./Components/Hooks/useContent";
@@ -27,7 +28,10 @@ function App() {
         :
         <Loading />
       }
-      <Lastbar {...data} />
+      {openItem.openItem ?
+        <Closing {...openItem} />
+        :
+        <Lastbar {...data} />}
     </div>
   )
 }

@@ -20,7 +20,13 @@
 
 .arrow {
     height: auto;
-    max-width: 30px;
+    width: 30px;
     color: white;
     cursor: pointer;
+}
+
+.cross {
+    width: 50px;
+    cursor: pointer;
+    height: auto;
 }
