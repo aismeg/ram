@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export const useDataSet = () => {
     const [characters, setCharacters] = useState(null);
     const [currentPageUrl, setCurrentPageUrl] = useState(null);
-    const [nextPageUrl, setNextPageUrl] = useState();
+    const [nextPageUrl, setNextPageUrl] = useState(1);
     const [prevPageUrl, setPrevPageUrl] = useState();
     const [pages, setPages] = useState();
     const [page, setPage] = useState(1);
@@ -21,7 +21,6 @@ export const useDataSet = () => {
                 const res = await fetch(url);
                 const data = await res.json();
 
-                setCurrentPageUrl(data);
                 setCharacters(data.results)
                 setNextPageUrl(data.info.next);
                 setPrevPageUrl(data.info.prev);
@@ -34,11 +33,11 @@ export const useDataSet = () => {
     }, [gender, name, page, species, status, type]);
 
     const nextPage = () => {
-        setCurrentPageUrl(nextPageUrl)
+        setPage(page + 1);
     }
     const prevPage = () => {
-        setCurrentPageUrl(prevPageUrl)
+        setPage(page - 1);
     }
 
-    return { characters, nextPage, prevPage, page, setPage, setGender, setSpecies, setType, setName, setStatus, nextPageUrl, prevPageUrl, pages, currentPageUrl };
+    return { characters, nextPage, prevPage, page, setPage, setGender, setSpecies, setType, setName, setStatus, nextPageUrl, prevPageUrl, pages };
 }
