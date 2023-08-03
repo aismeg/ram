@@ -32,3 +32,25 @@
     cursor: pointer;
     height: auto;
 }
+
+@media (max-width: 1440px) {
+
+    @media (max-width: 1386px) {
+
+        @media (max-width: 1320px) {
+
+
+            @media (max-width: 1280px) {
+
+                .arrow {
+                    width: 20px;
+                }
+
+                .cross {
+                    width: 40px;
+                }
+            }
+
+        }
+    }
+}

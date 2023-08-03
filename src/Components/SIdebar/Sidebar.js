@@ -43,7 +43,6 @@ export const Sidebar = ({ setName, setPage, setGender, setStatus, setType, setSp
                             <Status setPage={setPage} setStatus={setStatus} />
                             <Gender setPage={setPage} setGender={setGender} />
                             <Species setPage={setPage} setSpecies={setSpecies} />
-                            <option></option>
                         </div>
                     </div>
                 </div>

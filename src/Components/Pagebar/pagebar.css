@@ -28,3 +28,22 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+@media (max-width: 1440px) {
+
+    @media (max-width: 1386px) {
+
+        @media (max-width: 1320px) {
+
+            @media (max-width: 1280px) {
+                .page-bar-buttons {
+                    font-size: 14px;
+                }
+
+                .reset {
+                    width: 13px;
+                }
+            }
+        }
+    }
+}
