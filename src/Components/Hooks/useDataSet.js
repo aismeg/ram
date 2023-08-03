@@ -11,9 +11,10 @@ export const useDataSet = () => {
     const [gender, setGender] = useState('');
     const [species, setSpecies] = useState('');
     const [type, setType] = useState('');
+    const [status, setStatus] = useState('');
 
     useEffect(() => {
-        let url = `https://rickandmortyapi.com/api/character?page=${page}&name=${name}&gender=${gender}&species=${species}&type=${type}`;
+        let url = `https://rickandmortyapi.com/api/character?page=${page}&name=${name}&gender=${gender}&species=${species}&type=${type}&status=${status}`;
 
         const fetchData = async () => {
             try {
@@ -30,7 +31,7 @@ export const useDataSet = () => {
             }
         }
         fetchData();
-    }, [gender, name, page, species, type]);
+    }, [gender, name, page, species, status, type]);
 
     const nextPage = () => {
         setCurrentPageUrl(nextPageUrl)
@@ -39,5 +40,5 @@ export const useDataSet = () => {
         setCurrentPageUrl(prevPageUrl)
     }
 
-    return { characters, nextPage, prevPage, page, setPage, setGender, setSpecies, setType, setName, nextPageUrl, prevPageUrl, pages, currentPageUrl };
+    return { characters, nextPage, prevPage, page, setPage, setGender, setSpecies, setType, setName, setStatus, nextPageUrl, prevPageUrl, pages, currentPageUrl };
 }

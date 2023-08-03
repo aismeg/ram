@@ -1,0 +1,44 @@
+.filter:hover {
+    background-color: #313131;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.filter {
+    padding-top: 10px;
+    min-height: 30px;
+    max-width: 300px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.break {
+    height: 0.1px;
+    width: 80px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff8a;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.flex-table {
+    display: inline-flex;
+}
+
+label {
+    cursor: pointer;
+    display: inline-table;
+    font-size: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+}
