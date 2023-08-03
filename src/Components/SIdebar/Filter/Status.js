@@ -3,7 +3,7 @@ import React from "react";
 export const Status = ({ setStatus, setPage }) => {
     let status = ["Alive", "Dead", "Unknown"];
 
-    return (<div className="filter filter-status">
+    return (<section className="filter filter-status">
         <span className="span-title">Status</span>
         <div className="break"></div>
         {status.map((status, i) => (
@@ -22,5 +22,5 @@ export const Status = ({ setStatus, setPage }) => {
                 </div>
             </div>
         ))}
-    </div>)
+    </section>)
 }

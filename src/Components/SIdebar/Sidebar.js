@@ -17,12 +17,12 @@ export const Sidebar = ({ setName, setPage, setGender, setStatus, setType, setSp
                     <span className="nav-title">RaM Gallery</span>
                 </div>
                 <div className="menu">
-                    <div className="search-bar">
+                    <section className="search-bar">
                         <input type="search" onChange={(e) => {
                             setName(e.target.value);
                             setPage(1);
                         }} placeholder="Search for a character" />
-                    </div>
+                    </section>
                     <div className="filter-wrapper">
                         <div className="title-block">
                             <h2 className="filter-title">Filter</h2>

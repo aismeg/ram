@@ -3,4 +3,13 @@
     position: fixed;
     width: 1275px;
     top: 0;
+    height: 100vh;
+}
+
+.extended {
+    background-color: #242526;
+    position: absolute;
+    top: 150px;
+    width: 1275px;
+    border-radius: 10px;
 }

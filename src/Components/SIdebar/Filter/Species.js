@@ -16,7 +16,7 @@ export const Species = ({ setSpecies, setPage }) => {
         "Planet",
     ];
 
-    return (<div className="filter filter-species">
+    return (<section className="filter filter-species">
         <span className="span-title">Species</span>
         <div className="break"></div>
         <div className="column">
@@ -37,5 +37,5 @@ export const Species = ({ setSpecies, setPage }) => {
                 </div>
             ))}
         </div>
-    </div>)
+    </section>)
 }
