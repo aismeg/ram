@@ -75,6 +75,10 @@ input:focus {
     align-items: center;
 }
 
+.filter-title {
+    font-size: 20px;
+}
+
 @media (max-width: 1440px) {
     .filter-title {
         font-size: 20px;
@@ -88,7 +92,9 @@ input:focus {
                 font-size: 16px;
             }
 
-            @media (max-width: 1280px) {}
+            @media (max-width: 1200px) {
+                @media (max-width: 1160px) {}
+            }
 
         }
     }

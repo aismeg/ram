@@ -61,6 +61,9 @@
     }
 
     @media (max-width: 1386px) {
+        .extended-absolute {
+            width: 195px;
+        }
 
         @media (max-width: 1320px) {
             .extended {
@@ -68,14 +71,40 @@
             }
 
             .overlay {
-                width: 825px;
+                width: 826px;
             }
 
             .gs-extended {
                 font-size: 12px;
             }
 
-            @media (max-width: 1280px) {}
+            @media (max-width:1200px) {
+                .extended {
+                    width: 515px;
+                }
+
+                .overlay {
+                    width: 811px;
+                }
+
+                @media (max-width: 1160px) {
+                    .extended {
+                        width: 415px;
+                    }
+
+                    .info {
+                        margin-top: 10px;
+                        flex-direction: column !important;
+                        gap: 10px !important;
+                        align-items: flex-start;
+                    }
+
+                    .overlay {
+                        width: 645px;
+                    }
+
+                }
+            }
         }
     }
 }

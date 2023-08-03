@@ -100,7 +100,28 @@
                 font-size: 15px;
             }
 
-            @media (max-width: 1280px) {}
+            @media (max-width: 1200px) {
+                .content {
+                    gap: 10px;
+                }
+
+                .content-container {
+                    margin-left: 50px;
+                    margin-right: 20px;
+                    max-width: 810px;
+                }
+
+                @media (max-width: 1160px) {
+                    .content-container {
+                        max-width: 647px;
+                    }
+
+                    .content {
+                        gap: 30px;
+                    }
+                }
+
+            }
 
         }
     }

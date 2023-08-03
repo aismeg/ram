@@ -121,14 +121,15 @@ h2 {
     height: 100%;
 }
 
+span {
+    font-size: 14px;
+}
+
 @media (max-width: 1440px) {
     input::placeholder {
         font-size: 16px;
     }
 
-    span {
-        font-size: 14px;
-    }
 
     @media (max-width: 1386px) {
         @media (max-width: 1320px) {
@@ -141,6 +142,8 @@ h2 {
             }
         }
 
-        @media (max-width: 1280px) {}
+        @media (max-width: 1200px) {
+            @media (max-width: 1160px) {}
+        }
     }
 }
