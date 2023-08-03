@@ -19,9 +19,9 @@ export const Species = ({ setSpecies, setPage }) => {
     return (<details className="filter filter-species">
         <summary>Species</summary>
         <div className="break"></div>
-        {species.map((species, i) => (
-            <div key={i} className="checkbox">
-                <div className="flex-table">
+        <div>
+            {species.map((species, i) => (
+                <div key={i} className="checkbox">
                     <input onClick={(e) => {
                         if (e.target.checked === true) {
                             setSpecies(e.target.id);
@@ -33,7 +33,7 @@ export const Species = ({ setSpecies, setPage }) => {
                     <span className="checkmark"></span>
                     <label htmlFor={species}>{species}</label>
                 </div>
-            </div>
-        ))}
+            ))}
+        </div>
     </details>)
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Type = ({ setType, setPage }) => {
 
-    return (<details className="filter filter-species">
+    return (<details className="filter filter-type">
         <summary>Type</summary>
         <div className="break"></div>
         <div className="search-bar">

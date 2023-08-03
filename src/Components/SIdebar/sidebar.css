@@ -6,6 +6,8 @@
 
 .nav-container {
     padding: 24px;
+    position: fixed;
+    background-color: #242526;
     min-width: 300px;
     height: 100vh;
 }
@@ -91,20 +93,4 @@ input:focus {
 
 .clear:hover {
     filter: invert(50%);
-}
-
-.nav-header {
-    position: fixed;
-    z-index: 1;
-    padding-top: 25px;
-    padding-left: 25px;
-    background-color: #242526;
-}
-
-.bg {
-    background-color: #242526;
-    position: fixed;
-    min-width: 350px;
-    height: 100vh;
-    z-index: -1;
 }

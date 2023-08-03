@@ -3,7 +3,7 @@ import React from "react";
 export const Status = ({ setStatus, setPage }) => {
     let status = ["Alive", "Dead", "Unknown"];
 
-    return (<details className="filter filter-species">
+    return (<details className="filter filter-status">
         <summary>Status</summary>
         <div className="break"></div>
         {status.map((status, i) => (
