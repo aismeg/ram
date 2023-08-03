@@ -1,26 +1,28 @@
-.buttons {
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 540px;
-}
-
 .nav-buttons {
     position: fixed;
     height: auto;
     margin: 0;
-    top: 350px;
+    right: 60px;
+    top: 415px;
+}
+
+.buttons {
+    width: 65px;
 }
 
 .arrows {
     display: flex;
-    gap: 25px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: auto;
+    top: 310px;
 }
 
 .arrow {
     height: auto;
-    width: 30px;
+    width: 25px;
     color: white;
     cursor: pointer;
 }

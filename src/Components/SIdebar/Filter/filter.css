@@ -16,9 +16,9 @@
 }
 
 .filter {
-    padding-top: 10px;
-    min-height: 30px;
-    max-width: 300px;
+    padding-top: 5px;
+    height: auto;
+    max-width: 250px;
     border-top: 1px solid white;
     cursor: pointer;
     -webkit-transition: 0.3s;
@@ -27,7 +27,7 @@
 
 .break {
     height: 0.1px;
-    width: 80px;
+    width: 60px;
     margin-top: 5px;
     margin-bottom: 10px;
     background-color: #ffffff8a;
@@ -43,7 +43,7 @@
 
 label {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -54,7 +54,7 @@ summary {
 }
 
 .span-title {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .column {

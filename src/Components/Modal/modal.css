@@ -16,7 +16,7 @@
 .extended {
     background-color: #242526;
     position: absolute;
-    top: 150px;
+    top: 215px;
     width: 1120px;
     border-radius: 10px;
     display: flex;
@@ -45,6 +45,7 @@
 
 .gs-extended {
     font-size: 25px;
+    margin-top: 5px;
 }
 
 .cb-wrapper {

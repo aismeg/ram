@@ -18,20 +18,20 @@ function App() {
     <div className="parent">
       <Sidebar {...data} />
       {data.pages ?
-        <main className="main">
-          <div className="container content-container">
+        <>
+          <main className="container content-container">
             <Card {...data} {...openItem} />
             {openItem.openItem && <Modal {...openItem} {...data} />}
-          </div>
-          <Pagebar {...data} />
-        </main>
+            <Pagebar {...data} />
+          </main>
+          {openItem.openItem ?
+            <Closing {...openItem} />
+            :
+            <Lastbar {...data} />}
+        </>
         :
         <Loading />
       }
-      {openItem.openItem ?
-        <Closing {...openItem} />
-        :
-        <Lastbar {...data} />}
     </div>
   )
 }

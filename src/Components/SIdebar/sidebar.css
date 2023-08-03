@@ -1,6 +1,6 @@
 .nav {
     display: block;
-    min-width: 350px;
+    width: 250px;
     height: 100vh;
 }
 
@@ -8,7 +8,7 @@
     padding: 24px;
     position: fixed;
     background-color: #242526;
-    min-width: 300px;
+    max-width: 250px;
     height: 100vh;
 }
 
@@ -30,7 +30,7 @@
 
 .nav-title {
     font-family: 'Bangers', cursive;
-    font-size: 30px;
+    font-size: 25px;
     color: green;
 }
 
@@ -40,8 +40,8 @@
 }
 
 [type="search"] {
-    min-height: 25px;
-    min-width: 300px;
+    height: auto;
+    max-width: 205px;
     background-color: #1f1f20;
     border: 0;
     border-radius: 5px;
@@ -62,11 +62,11 @@ input:focus {
 .filter-list {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 .filter-title {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 

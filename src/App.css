@@ -4,6 +4,7 @@
     color: white;
     font-family: 'Bangers', cursive;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box
 }
 
 html {
@@ -24,6 +25,9 @@ h1 {
     margin: 0.67em 0;
 }
 
+span {
+    font-size: 14px;
+}
 
 a {
     background-color: transparent;
@@ -113,8 +117,7 @@ h2 {
 
 .container {
     display: block;
-    margin-right: 50px;
-    margin-left: 50px;
+
 }
 
 .main {
