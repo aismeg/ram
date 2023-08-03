@@ -19,8 +19,6 @@
     height: 100%;
     margin-top: 25px;
     max-width: 935px;
-    margin-left: 70px;
-    margin-right: 55px;
 }
 
 .card {
@@ -67,9 +65,21 @@
     margin-top: 10px;
 }
 
+.content-container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+@media(max-width: 1500px) {}
+
 @media(max-width:1440px) {
     .name {
         font-size: 20px;
+    }
+
+    .content-container {
+        margin-left: 70px;
+        margin-right: 55px;
     }
 
     @media (max-width: 1386px) {

@@ -33,7 +33,16 @@
     height: auto;
 }
 
+.arrow {
+    width: 30px;
+}
+
+@media(max-width:1500px) {}
+
 @media (max-width: 1440px) {
+    .arrow {
+        width: 25px;
+    }
 
     @media (max-width: 1386px) {
 
