@@ -9,7 +9,6 @@
     min-height: 30px;
     max-width: 300px;
     border-top: 1px solid white;
-    border-bottom: 1px solid white;
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -39,6 +38,11 @@ label {
     cursor: pointer;
     display: inline-table;
     font-size: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+summary {
     -webkit-user-select: none;
     user-select: none;
 }
