@@ -1,7 +1,18 @@
-.filter:hover {
+.flex-table:hover {
     background-color: #313131;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+}
+
+.flex-table {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.type-bar {
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .filter {
@@ -42,7 +53,10 @@ summary {
     user-select: none;
 }
 
-.filter-species {
-    display: flex;
+.span-title {
+    font-size: 18px;
+}
+
+.column {
     columns: 2;
 }

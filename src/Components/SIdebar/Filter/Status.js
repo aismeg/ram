@@ -3,8 +3,8 @@ import React from "react";
 export const Status = ({ setStatus, setPage }) => {
     let status = ["Alive", "Dead", "Unknown"];
 
-    return (<details className="filter filter-status">
-        <summary>Status</summary>
+    return (<div className="filter filter-status">
+        <span className="span-title">Status</span>
         <div className="break"></div>
         {status.map((status, i) => (
             <div key={i} className="checkbox">
@@ -22,5 +22,5 @@ export const Status = ({ setStatus, setPage }) => {
                 </div>
             </div>
         ))}
-    </details>)
+    </div>)
 }

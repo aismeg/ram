@@ -1,6 +1,21 @@
 .page-bar-buttons {
     border: none;
     background: none;
+    cursor: pointer;
+}
+
+.reset {
+    filter: invert(40%);
+    width: 15px;
+    cursor: pointer;
+}
+
+.page-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 5px;
 }
 
 .bar-wrapper {

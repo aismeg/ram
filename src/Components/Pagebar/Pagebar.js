@@ -1,6 +1,6 @@
 import React from "react";
 import './pagebar.css';
-import arrowLeft from '../../img/arrow-left.svg';
+import reset from '../../img/reset.svg';
 
 
 export const Pagebar = ({ pages, page, setPage }) => {
@@ -15,7 +15,8 @@ export const Pagebar = ({ pages, page, setPage }) => {
     return (
         <div className="bar-wrapper">
             <div className="page-bar">
-                {pageButtons.length > 1 && <img onClick={() => setPage(1)} className="arrow arrow-left" src={arrowLeft} alt="arrow" />}
+                {pageButtons.length > 1 &&
+                    <img onClick={() => setPage(1)} className="reset" src={reset} alt="arrow" />}
                 {pageButtons}
             </div>
         </div>

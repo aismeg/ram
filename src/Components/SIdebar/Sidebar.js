@@ -32,15 +32,17 @@ export const Sidebar = ({ setName, setPage, setGender, setStatus, setType, setSp
                                 setPage('');
                                 setGender('');
                                 setSpecies('');
+                                setType('');
+                                setStatus('');
                             }}>
                                 <img className="clear" src={trash} fill="white" alt="trash" />
                             </button>
                         </div>
                         <div className="filter-list">
+                            <Type setPage={setPage} setType={setType} />
                             <Status setPage={setPage} setStatus={setStatus} />
                             <Gender setPage={setPage} setGender={setGender} />
                             <Species setPage={setPage} setSpecies={setSpecies} />
-                            <Type setPage={setPage} setType={setType} />
                             <option></option>
                         </div>
                     </div>
