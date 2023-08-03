@@ -1,7 +1,7 @@
 .overlay {
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
-    width: 1275px;
+    width: 935px;
     top: 0;
     height: 100vh;
 }
@@ -16,20 +16,21 @@
 .extended {
     background-color: #242526;
     position: absolute;
-    top: 215px;
-    width: 1120px;
+    top: 175px;
+    width: 715px;
     border-radius: 10px;
     display: flex;
-    left: 77.5px;
+    left: 110px;
 }
 
 .extended-absolute {
-    max-width: 300px;
+    width: 215px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 6px -1px, rgba(0, 0, 0, 0.16) 0px 2px 4px;
 }
 
 .character-modal {
     border-radius: 10px 0 0 0;
+    width: inherit;
 }
 
 .more-about {
@@ -44,8 +45,8 @@
 }
 
 .gs-extended {
-    font-size: 25px;
-    margin-top: 5px;
+    font-size: 15px;
+    margin-top: 2px;
 }
 
 .cb-wrapper {
