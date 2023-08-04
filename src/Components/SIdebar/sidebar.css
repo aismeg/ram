@@ -3,6 +3,10 @@
     height: 100vh;
 }
 
+.filter-parent {
+    background: #1b1b1d;
+}
+
 .menu-call {
     background: none;
     outline: none;
@@ -13,6 +17,12 @@
 
 .off {
     display: none;
+}
+
+.mob-input {
+    min-width: 350px !important;
+    height: 40px !important;
+    margin-top: 20px;
 }
 
 .size-parent {
@@ -40,12 +50,17 @@
     z-index: 1;
 }
 
+.crutch {
+    width: 85px !important;
+}
+
 .mobile-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #242526;
     height: 100%;
+    max-height: 70px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
@@ -65,7 +80,6 @@
 .header {
     height: auto;
     max-width: 260px;
-    display: block;
 }
 
 .icon {
@@ -75,7 +89,7 @@
 .header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    flex-direction: column;
 }
 
 .nav-title {
@@ -146,6 +160,12 @@ input:focus {
     width: 250px;
 }
 
+.top-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 @media(max-width: 1770px) {
     @media(max-width: 1630px) {
         [type="search"] {
@@ -204,8 +224,28 @@ input:focus {
                                     }
 
                                     .nav-mobile {
-                                        display: block;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
                                     }
+
+                                    .filter-wrapper {
+                                        height: 100vh;
+                                        padding: 20px;
+                                    }
+
+                                    .search-bar {
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                    }
+
+                                    .sb-mobile {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        height: auto;
+                                    }
+
                                 }
                             }
                         }

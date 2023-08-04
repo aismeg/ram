@@ -13,6 +13,8 @@ export const Status = ({ setStatus, setPage }) => {
                             if (e.target.checked === true) {
                                 setStatus(e.target.id);
                                 setPage(1);
+                            } else {
+                                setStatus('');
                             }
                         }} className="input-class" type="checkbox" id={status} />
                         <label htmlFor={status}>{status}</label>

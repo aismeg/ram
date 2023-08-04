@@ -17,7 +17,6 @@
 
 .content-container {
     height: 100%;
-    margin-top: 25px;
     max-width: 1260px;
     margin-left: 90px;
     margin-right: 95px;
@@ -226,7 +225,7 @@
                                                         .content-container {
                                                             max-width: 780px;
                                                             position: relative;
-                                                            top: 80px;
+                                                            top: 130px;
                                                             margin-left: 50px;
                                                             margin-right: 50px;
                                                         }

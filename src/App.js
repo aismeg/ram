@@ -22,6 +22,7 @@ function App() {
       {data.pages ?
         <>
           <main className="container content-container">
+            <Pagebar {...data} />
             <Card {...data} {...openItem} />
             {openItem.openItem && <Modal {...openItem} {...data} />}
             <Pagebar {...data} />
