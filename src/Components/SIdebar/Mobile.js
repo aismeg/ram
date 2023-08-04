@@ -3,6 +3,6 @@ import './sidebar.css';
 
 export const Mobile = () => (
     <nav className="nav-mobile">
-        <div className="nav-menu"></div>
+        <div className="mobile-menu"></div>
     </nav>
 )

@@ -225,6 +225,8 @@
 
                                                         .content-container {
                                                             max-width: 780px;
+                                                            position: relative;
+                                                            top: 80px;
                                                         }
                                                     }
                                                 }

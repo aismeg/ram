@@ -5,15 +5,17 @@
 
 .nav-mobile {
     display: none;
-    background-color: white;
     position: fixed;
     height: 80px;
     width: 100%;
+    z-index: 1;
 }
 
-.nav-menu {
-    height: 80px;
+.mobile-menu {
+    background-color: #242526;
+    height: 100%;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
 
 .nav-container {
