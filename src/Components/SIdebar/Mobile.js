@@ -2,7 +2,7 @@ import React from "react";
 import './sidebar.css';
 import menu from '../../img/menu.svg';
 import { Lastbar } from "../Lastbar/Lastbar";
-import { Filter } from "../Sidebar/Filter/Filter";
+import { Filter } from "./Filter/Filter";
 
 export const Mobile = ({ data }) => (
     <nav className="nav-mobile">
@@ -21,7 +21,7 @@ export const Mobile = ({ data }) => (
             </div>
         </div>
         <div className="filter-parent">
-            <Filter />
+            <Filter {...data} />
         </div>
     </nav>
 )

@@ -14,8 +14,6 @@ export const Gender = ({ setGender, setPage }) => {
                         if (e.target.checked === true) {
                             setGender(e.target.id);
                             setPage(1);
-                        } else {
-                            setGender('');
                         }
                     }} className="input-class" type="checkbox" id={gender} />
                     <label htmlFor={gender}>{gender}</label>

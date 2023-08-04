@@ -26,8 +26,6 @@ export const Species = ({ setSpecies, setPage }) => {
                         if (e.target.checked === true) {
                             setSpecies(e.target.id);
                             setPage(1);
-                        } else {
-                            setSpecies('');
                         }
                     }} className="input-class" type="checkbox" id={species} />
                     <label htmlFor={species}>{species}</label>
