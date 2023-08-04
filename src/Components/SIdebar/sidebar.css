@@ -5,6 +5,7 @@
 
 .filter-parent {
     background: #1b1b1d;
+    width: 100%;
 }
 
 .menu-call {
@@ -22,7 +23,6 @@
 .mob-input {
     min-width: 350px !important;
     height: 40px !important;
-    margin-top: 20px;
 }
 
 .size-parent {
@@ -246,6 +246,9 @@ input:focus {
                                         height: auto;
                                     }
 
+                                    .filter-title {
+                                        font-size: 26px;
+                                    }
                                 }
                             }
                         }

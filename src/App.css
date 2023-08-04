@@ -156,6 +156,10 @@ span {
                     .parent {
                         justify-content: center;
                     }
+
+                    .type-input {
+                        height: 35px !important;
+                    }
                 }
             }
         }
