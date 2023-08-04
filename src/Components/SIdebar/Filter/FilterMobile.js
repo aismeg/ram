@@ -11,21 +11,21 @@ export const FilterMobile = ({ setPage, setGender, setStatus, setType, setSpecie
         </div>
         <div className="filter-list">
             <Type setPage={setPage} setType={setType} />
-            <details className="filter filter-species">
-                <summary className="span-title">Status</summary>
+            <div className="filter filter-species">
+                <span className="span-title">Status</span>
                 <div className="break"></div>
                 <Status setPage={setPage} setStatus={setStatus} />
-            </details>
-            <details className="filter filter-gender">
-                <summary className="span-title">Gender</summary>
+            </div>
+            <div className="filter filter-gender">
+                <span className="span-title">Gender</span>
                 <div className="break"></div>
                 <Gender setPage={setPage} setGender={setGender} />
-            </details>
-            <details className="filter filter-species">
-                <summary className="span-title">Species</summary>
+            </div>
+            <div className="filter filter-species">
+                <span className="span-title">Species</span>
                 <div className="break"></div>
                 <Species setPage={setPage} setSpecies={setSpecies} />
-            </details>
+            </div>
         </div>
     </div>
 )
