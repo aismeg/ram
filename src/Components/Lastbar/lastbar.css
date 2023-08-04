@@ -67,6 +67,15 @@
                             .buttons {
                                 display: none;
                             }
+
+                            .arrow {
+                                width: 25px;
+                            }
+
+                            .arrows {
+                                position: unset;
+                                gap: 35px;
+                            }
                         }
                     }
                 }

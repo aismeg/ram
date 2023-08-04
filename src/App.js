@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="parent">
-      <Mobile {...data} />
+      <Mobile data={data} />
       <Sidebar {...data} />
       {data.pages ?
         <>
@@ -26,10 +26,12 @@ function App() {
             {openItem.openItem && <Modal {...openItem} {...data} />}
             <Pagebar {...data} />
           </main>
-          {openItem.openItem ?
-            <Closing {...openItem} />
-            :
-            <Lastbar {...data} />}
+          <aside className="buttons">
+            {openItem.openItem ?
+              <Closing {...openItem} />
+              :
+              <Lastbar {...data} />}
+          </aside>
         </>
         :
         <Loading />
