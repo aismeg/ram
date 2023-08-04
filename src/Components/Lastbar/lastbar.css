@@ -82,6 +82,10 @@
                                     width: 20px;
                                 }
 
+                                .cross {
+                                    width: 35px;
+                                }
+
                                 @media (max-width: 480px) {
                                     .arrow {
                                         width: 20px;
