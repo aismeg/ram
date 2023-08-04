@@ -219,7 +219,7 @@
                                                         }
 
                                                         span {
-                                                            font-size: 14px;
+                                                            font-size: 18px;
                                                         }
 
                                                         .content-container {
@@ -233,6 +233,12 @@
                                                         @media (max-width: 780px) {
                                                             .content {
                                                                 justify-content: center;
+                                                            }
+
+                                                            @media (max-width: 420px) {
+                                                                span {
+                                                                    font-size: 16px;
+                                                                }
                                                             }
                                                         }
                                                     }
