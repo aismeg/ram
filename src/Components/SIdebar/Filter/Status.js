@@ -17,7 +17,6 @@ export const Status = ({ setStatus, setPage }) => {
                             setStatus('');
                         }
                     }} className="input-class" type="checkbox" id={status} />
-                    <span className="checkmark"></span>
                     <label htmlFor={status}>{status}</label>
                 </div>
             </div>

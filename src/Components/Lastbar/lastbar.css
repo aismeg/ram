@@ -62,7 +62,13 @@
                 }
 
                 @media (max-width: 1202px) {
-                    @media (max-width: 1160px) {}
+                    @media (max-width: 1160px) {
+                        @media (max-width: 992px) {
+                            .buttons {
+                                display: none;
+                            }
+                        }
+                    }
                 }
 
             }

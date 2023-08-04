@@ -104,7 +104,7 @@
                 }
 
                 .content-container {
-                    margin-left: 80px;
+                    margin-right: 80px;
                     margin-right: 70px;
                     max-width: 1060px;
                 }
@@ -206,12 +206,29 @@
                                                 @media (max-width: 1150px) {
                                                     .content-container {
                                                         max-width: 615px;
-                                                        margin-left: 80px;
-                                                        margin-right: 60px;
+                                                        margin-left: 60px;
+                                                        margin-right: 44px;
+                                                    }
+
+                                                    @media (max-width: 992px) {
+                                                        .card {
+                                                            width: 250px;
+                                                        }
+
+                                                        .name {
+                                                            font-size: 22px;
+                                                        }
+
+                                                        span {
+                                                            font-size: 14px;
+                                                        }
+
+                                                        .content-container {
+                                                            max-width: 780px;
+                                                        }
                                                     }
                                                 }
                                             }
-
                                         }
 
                                     }

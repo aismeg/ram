@@ -31,7 +31,6 @@ export const Species = ({ setSpecies, setPage }) => {
                                 setSpecies('');
                             }
                         }} className="input-class" type="checkbox" id={species} />
-                        <span className="checkmark"></span>
                         <label htmlFor={species}>{species}</label>
                     </div>
                 </div>

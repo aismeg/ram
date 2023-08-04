@@ -18,7 +18,6 @@ export const Gender = ({ setGender, setPage }) => {
                             setGender('');
                         }
                     }} className="input-class" type="checkbox" id={gender} />
-                    <span className="checkmark"></span>
                     <label htmlFor={gender}>{gender}</label>
                 </div>
             </div>

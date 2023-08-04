@@ -9,6 +9,7 @@ import { Closing } from "./Components/Lastbar/Closing";
 import { Loading } from "./Components/Loading/Loading";
 import { useDataSet } from "./Components/Hooks/useDataSet";
 import { useContent } from "./Components/Hooks/useContent";
+import { Mobile } from "./Components/Sidebar/Mobile";
 
 function App() {
   const data = useDataSet();
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="parent">
+      <Mobile {...data} />
       <Sidebar {...data} />
       {data.pages ?
         <>
