@@ -1,6 +1,5 @@
 .nav {
     display: block;
-    width: 250px;
     height: 100vh;
 }
 
@@ -8,7 +7,6 @@
     padding: 24px;
     position: fixed;
     background-color: #242526;
-    max-width: 250px;
     height: 100vh;
 }
 
@@ -41,7 +39,6 @@
 
 [type="search"] {
     height: auto;
-    max-width: 205px;
     background-color: #1f1f20;
     border: 0;
     border-radius: 5px;
@@ -75,27 +72,79 @@ input:focus {
     align-items: center;
 }
 
-.filter-title {
-    font-size: 20px;
+.break {
+    width: 80px;
 }
 
-@media (max-width: 1440px) {
-    .filter-title {
-        font-size: 20px;
-    }
+.filter-title {
+    font-size: 24px;
+}
 
-    @media (max-width: 1386px) {
+.nav-container {
+    max-width: 300px;
+}
 
-        @media (max-width: 1320px) {
+.nav {
+    width: 300px;
+}
 
-            .filter-title {
-                font-size: 16px;
+[type="search"] {
+    max-width: 250px;
+    width: 250px;
+}
+
+@media(max-width: 1770px) {
+    @media(max-width: 1630px) {
+        [type="search"] {
+            max-width: 205px;
+
+        }
+
+        .break {
+            width: 70px;
+        }
+
+        .nav-container {
+            max-width: 280px;
+        }
+
+        .nav {
+            width: 280px;
+        }
+
+        .filter-title {
+            font-size: 22px;
+        }
+
+        @media (max-width: 1500px) {
+            .nav {
+                width: 250px;
             }
 
-            @media (max-width: 1200px) {
-                @media (max-width: 1160px) {}
+            .nav-container {
+                max-width: 250px;
             }
 
+            @media (max-width: 1440px) {
+                .filter-title {
+                    font-size: 20px;
+                }
+
+                @media (max-width: 1386px) {
+
+                    @media (max-width: 1320px) {
+
+                        .filter-title {
+                            font-size: 16px;
+                        }
+
+                        @media (max-width: 1200px) {
+                            @media (max-width: 1160px) {}
+                        }
+
+                    }
+                }
+            }
         }
     }
 }

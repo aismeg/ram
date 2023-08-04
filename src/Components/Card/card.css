@@ -11,21 +11,23 @@
 
 .content {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .content-container {
     height: 100%;
     margin-top: 25px;
-    max-width: 935px;
+    max-width: 1260px;
+    margin-left: 90px;
+    margin-right: 95px;
 }
 
 .card {
     cursor: pointer;
     background: #31363bcc;
+    width: 300px;
     height: auto;
-    width: 215px;
     border-radius: 10px 10px 5px 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px;
 }
@@ -65,74 +67,160 @@
     margin-top: 10px;
 }
 
-.content-container {
-    margin-left: 80px;
-    margin-right: 80px;
+.name {
+    font-size: 22px;
 }
 
-@media(max-width: 1500px) {}
+.span {
+    font-size: 16px;
+}
 
-@media(max-width:1440px) {
-    .name {
-        font-size: 20px;
-    }
-
+@media(max-width: 1830px) {
     .content-container {
-        margin-left: 70px;
-        margin-right: 55px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
-    @media (max-width: 1386px) {
+    @media(max-width: 1770px) {
         .content-container {
-            margin-left: 45px;
-            margin-right: 25px;
+            margin-left: 80px;
+            margin-right: 80px;
+            max-width: 1180px;
         }
 
-        @media (max-width: 1320px) {
+        .card {
+            width: 280px;
+        }
+
+        @media(max-width: 1715px) {
             .content-container {
-                margin-left: 50px;
-                margin-right: 50px;
+                margin-left: 40px;
+                margin-right: 35px;
             }
 
-            .card {
-                width: 195px;
-            }
-
-            .content {
-                gap: 15px;
-            }
-
-            .content-container {
-                max-width: 825px;
-            }
-
-            .name {
-                font-size: 15px;
-            }
-
-            @media (max-width: 1200px) {
-                .content {
-                    gap: 10px;
+            @media(max-width: 1630px) {
+                .card {
+                    width: 250px;
                 }
 
                 .content-container {
-                    margin-left: 50px;
-                    margin-right: 20px;
-                    max-width: 810px;
+                    margin-left: 80px;
+                    margin-right: 70px;
+                    max-width: 1060px;
                 }
 
-                @media (max-width: 1160px) {
+                @media(max-width: 1566px) {
                     .content-container {
-                        max-width: 647px;
+                        margin-right: 40px;
                     }
 
-                    .content {
-                        gap: 30px;
+                    @media(max-width: 1535px) {
+                        .content-container {
+                            margin-right: 40px;
+                            margin-left: 25px;
+                        }
+
+                        @media(max-width: 1500px) {
+                            .content-container {
+                                margin-left: 80px;
+                                margin-right: 80px;
+                                width: 935px;
+                            }
+
+                            .content {
+                                gap: 25px;
+                            }
+
+                            .card {
+                                width: 215px;
+                            }
+                        }
+
+                        @media(max-width:1440px) {
+                            .name {
+                                font-size: 20px;
+                            }
+
+                            .content-container {
+                                margin-left: 80px;
+                                margin-right: 55px;
+                            }
+
+                            @media (max-width: 1386px) {
+                                .content-container {
+                                    margin-left: 45px;
+                                    margin-right: 25px;
+                                }
+
+                                @media (max-width: 1320px) {
+                                    .content-container {
+                                        margin-left: 70px;
+                                        margin-right: 60px;
+                                    }
+
+                                    .card {
+                                        width: 195px;
+                                    }
+
+                                    .content {
+                                        gap: 15px;
+                                    }
+
+                                    .content-container {
+                                        max-width: 825px;
+                                    }
+
+                                    .name {
+                                        font-size: 15px;
+                                    }
+
+                                    @media(max-width:1280px) {
+                                        .content-container {
+                                            margin-left: 50px;
+                                            margin-right: 50px;
+                                        }
+
+
+                                        @media (max-width: 1203px) {
+                                            .content {
+                                                gap: 10px;
+                                            }
+
+                                            .content-container {
+                                                margin-left: 50px;
+                                                margin-right: 20px;
+                                                max-width: 810px;
+                                            }
+
+                                            @media (max-width: 1160px) {
+                                                .content-container {
+                                                    max-width: 825px;
+                                                    margin-left: 15px;
+                                                    margin-right: 10px;
+                                                }
+
+                                                .content {
+                                                    gap: 15px;
+                                                }
+
+                                                @media (max-width: 1150px) {
+                                                    .content-container {
+                                                        max-width: 615px;
+                                                        margin-left: 80px;
+                                                        margin-right: 60px;
+                                                    }
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-
             }
-
         }
     }
 }

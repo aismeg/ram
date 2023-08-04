@@ -1,7 +1,6 @@
 .overlay {
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
-    width: 935px;
     top: 0;
     height: 100vh;
 }
@@ -17,14 +16,12 @@
     background-color: #242526;
     position: absolute;
     top: 175px;
-    width: 715px;
     border-radius: 10px;
     display: flex;
     left: 110px;
 }
 
 .extended-absolute {
-    width: 215px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 6px -1px, rgba(0, 0, 0, 0.16) 0px 2px 4px;
 }
 
@@ -45,7 +42,6 @@
 }
 
 .gs-extended {
-    font-size: 15px;
     margin-top: 2px;
 }
 
@@ -55,54 +51,148 @@
     margin-top: 30px;
 }
 
-@media (max-width: 1440px) {
-    .gs-extended {
-        font-size: 15px;
-    }
+.overlay {
+    width: 1260px;
+}
 
-    @media (max-width: 1386px) {
-        .extended-absolute {
-            width: 195px;
+.extended {
+    width: 1035px;
+}
+
+.extended-absolute {
+    width: 300px;
+}
+
+.gs-extended {
+    font-size: 20px;
+}
+
+@media(max-width: 1830px) {
+
+    @media(max-width: 1770px) {
+        .overlay {
+            width: 1180px;
         }
 
-        @media (max-width: 1320px) {
-            .extended {
-                width: 615px;
-            }
+        .extended {
+            width: 955px;
+        }
 
-            .overlay {
-                width: 826px;
-            }
+        .extended-absolute {
+            width: 280px;
+        }
 
-            .gs-extended {
-                font-size: 12px;
-            }
+        .gs-extended {
+            font-size: 18px;
+        }
 
-            @media (max-width:1200px) {
-                .extended {
-                    width: 515px;
-                }
+        @media(max-width: 1715px) {
 
+            @media(max-width: 1630px) {
                 .overlay {
-                    width: 811px;
+                    width: 1060px;
                 }
 
-                @media (max-width: 1160px) {
-                    .extended {
-                        width: 415px;
-                    }
+                .extended {
+                    width: 835px;
+                }
 
-                    .info {
-                        margin-top: 10px;
-                        flex-direction: column !important;
-                        gap: 10px !important;
-                        align-items: flex-start;
-                    }
+                .extended-absolute {
+                    width: 250px;
+                }
 
-                    .overlay {
-                        width: 645px;
-                    }
+                .gs-extended {
+                    font-size: 16px;
+                }
 
+                @media(max-width: 1566px) {
+
+
+                    @media(max-width: 1535px) {
+
+                        @media (max-width:1500px) {
+
+                            @media (max-width: 1440px) {
+                                .extended-absolute {
+                                    width: 215px;
+                                }
+                            }
+
+                            .overlay {
+                                width: 935px;
+                            }
+
+                            .extended {
+                                width: 710px;
+                            }
+
+                            .extended-absolute {
+                                width: 215px;
+                            }
+
+                            .gs-extended {
+                                font-size: 15px;
+                            }
+
+                            @media (max-width: 1386px) {
+                                .extended-absolute {
+                                    width: 195px;
+                                }
+
+                                @media (max-width: 1320px) {
+                                    .extended {
+                                        width: 615px;
+                                    }
+
+                                    .overlay {
+                                        width: 826px;
+                                    }
+
+                                    .gs-extended {
+                                        font-size: 12px;
+                                    }
+
+                                    @media (max-width:1203px) {
+                                        .extended {
+                                            width: 515px;
+                                        }
+
+                                        .overlay {
+                                            width: 811px;
+                                        }
+
+                                        @media (max-width: 1160px) {
+                                            .extended {
+                                                width: 595px;
+                                            }
+
+                                            .info {
+                                                margin-top: 10px;
+                                                flex-direction: column !important;
+                                                gap: 10px !important;
+                                                align-items: flex-start;
+                                            }
+
+                                            .overlay {
+                                                width: 825px;
+                                            }
+
+                                            @media (max-width: 1150px) {
+                                                .extended {
+                                                    width: 405px;
+                                                }
+
+                                                .overlay {
+                                                    width: 615px;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
