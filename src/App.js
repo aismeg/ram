@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="parent">
       <Mobile data={data} />
-      <Sidebar {...data} />
+      <Sidebar data={data} />
       {data.pages ?
         <>
           <main className="container content-container">

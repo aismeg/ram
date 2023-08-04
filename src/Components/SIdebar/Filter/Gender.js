@@ -4,8 +4,8 @@ import './filter.css';
 export const Gender = ({ setGender, setPage }) => {
     let gender = ['Male', 'Female', 'Genderless', 'Unknown'];
 
-    return (<section className="filter filter-gender">
-        <span className="span-title">Gender</span>
+    return (<details className="filter filter-gender">
+        <summary className="span-title">Gender</summary>
         <div className="break"></div>
         {gender.map((gender, i) => (
             <div key={i} className="checkbox">
@@ -22,5 +22,5 @@ export const Gender = ({ setGender, setPage }) => {
                 </div>
             </div>
         ))}
-    </section>)
+    </details>)
 }

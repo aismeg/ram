@@ -40,10 +40,15 @@
 }
 
 .nav-container {
-    padding: 24px;
+    padding: 22px;
     position: fixed;
     background-color: #242526;
     height: 100vh;
+}
+
+.filter-list {
+    overflow-y: auto;
+    max-height: 510px;
 }
 
 .header {
@@ -95,7 +100,7 @@ input:focus {
 .filter-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
 }
 
 .filter-title {
@@ -106,6 +111,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid white;
 }
 
 .break {

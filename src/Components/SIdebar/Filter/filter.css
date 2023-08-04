@@ -33,6 +33,11 @@
     background-color: #ffffff8a;
 }
 
+.filter-type {
+    border-top: none;
+    margin-bottom: 20px;
+}
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -50,11 +55,6 @@ label {
 summary {
     -webkit-user-select: none;
     user-select: none;
-}
-
-
-.column {
-    columns: 2;
 }
 
 .span-title {

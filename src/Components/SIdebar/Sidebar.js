@@ -1,11 +1,8 @@
 import React from "react";
 import './sidebar.css';
-import { Gender } from "./Filter/Gender";
-import { Species } from "./Filter/Species";
-import { Status } from "./Filter/Status";
-import { Type } from "./Filter/Type";
+import { Filter } from "./Filter/Filter";
 
-export const Sidebar = ({ setName, setPage, setGender, setStatus, setType, setSpecies }) => {
+export const Sidebar = ({ data }) => {
     return (
         <aside className="nav">
             <nav className="nav-container">
@@ -18,21 +15,11 @@ export const Sidebar = ({ setName, setPage, setGender, setStatus, setType, setSp
                 <div className="menu">
                     <section className="search-bar">
                         <input type="search" onChange={(e) => {
-                            setName(e.target.value);
-                            setPage(1);
+                            data.setName(e.target.value);
+                            data.setPage(1);
                         }} placeholder="Search for a character" />
                     </section>
-                    <div className="filter-wrapper">
-                        <div className="title-block">
-                            <h2 className="filter-title">Filter</h2>
-                        </div>
-                        <div className="filter-list">
-                            <Type setPage={setPage} setType={setType} />
-                            <Status setPage={setPage} setStatus={setStatus} />
-                            <Gender setPage={setPage} setGender={setGender} />
-                            <Species setPage={setPage} setSpecies={setSpecies} />
-                        </div>
-                    </div>
+                    <Filter {...data} />
                 </div>
             </nav>
         </aside>
