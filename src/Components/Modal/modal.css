@@ -189,13 +189,16 @@
                                                 @media (max-width: 992px) {
                                                     .overlay {
                                                         background: none;
-                                                        height: auto;
-                                                        width: auto;
-                                                        left: 103px;
+                                                        height: 100%;
+                                                        width: 100%;
+                                                        left: 0;
                                                         z-index: 1;
+                                                        display: flex;
+                                                        justify-content: center;
                                                     }
 
                                                     .extended {
+                                                        position: relative !important;
                                                         top: 70px;
                                                         left: 0;
                                                         width: 785px;
