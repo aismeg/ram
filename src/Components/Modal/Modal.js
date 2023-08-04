@@ -11,11 +11,11 @@ export const Modal = ({ openItem, setOpenItem }) => (
         <article className="extended">
             <div className="extended-absolute">
                 <img className="character-modal" src={openItem.image} alt="character" />
-                <div className="info">
-                    <h2 className="name">{openItem.name}</h2>
+                <div className="info info-modal">
+                    <h2 className="name name-modal">{openItem.name}</h2>
                     <span className="gender-species">{openItem.gender} - {openItem.species}</span>
                 </div>
-                <div className="status">
+                <div className="status status-modal">
                     <span className="top">Status:</span>
                     <span className="bottom">{openItem.status}</span>
                 </div>
@@ -23,19 +23,19 @@ export const Modal = ({ openItem, setOpenItem }) => (
             <section className="more-about">
                 <div className="ma-wrapper">
                     <div className="info info-extended">
-                        <h2 className="name">Location:</h2>
+                        <h2 className="name name-modal">Location:</h2>
                         <span className="gender-species gs-extended">{openItem.location.name}</span>
                     </div>
                     <div className="info info-extended">
-                        <h2 className="name">Origin:</h2>
+                        <h2 className="name name-modal">Origin:</h2>
                         <span className="gender-species gs-extended">{openItem.origin.name}</span>
                     </div>
                     <div className="info info-extended">
-                        <h2 className="name">Species:</h2>
+                        <h2 className="name name-modal">Species:</h2>
                         <span className="gender-species gs-extended">{openItem.species}</span>
                     </div>
                     {openItem.type !== '' ? <div className="info info-extended">
-                        <h2 className="name">Type:</h2>
+                        <h2 className="name name-modal">Type:</h2>
                         <span className="gender-species gs-extended">{openItem.type}</span>
                     </div>
                         :

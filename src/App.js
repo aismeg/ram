@@ -22,17 +22,17 @@ function App() {
       {data.pages ?
         <>
           <main className="container content-container">
-            <Pagebar {...data} />
+            {data.characters && <Pagebar {...data} />}
             <Card {...data} {...openItem} />
             {openItem.openItem && <Modal {...openItem} {...data} />}
-            <Pagebar {...data} />
+            {data.characters && <Pagebar {...data} />}
           </main>
-          <aside className="buttons">
+          {data.characters && <aside className="buttons">
             {openItem.openItem ?
               <Closing {...openItem} />
               :
               <Lastbar {...data} />}
-          </aside>
+          </aside>}
         </>
         :
         <Loading />

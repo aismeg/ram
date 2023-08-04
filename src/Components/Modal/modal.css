@@ -186,6 +186,52 @@
                                                     width: 615px;
                                                 }
 
+                                                @media (max-width: 992px) {
+                                                    .overlay {
+                                                        background: none;
+                                                        height: auto;
+                                                        width: auto;
+                                                        left: 103px;
+                                                        z-index: 1;
+                                                    }
+
+                                                    .extended {
+                                                        top: 70px;
+                                                        left: 0;
+                                                        width: 785px;
+                                                        flex-direction: column;
+                                                        align-items: center;
+                                                        height: 850px;
+                                                        overflow-y: scroll;
+                                                        padding: 20px;
+                                                        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 6px -1px, rgba(0, 0, 0, 0.16) 0px 2px 4px;
+
+                                                    }
+
+                                                    .extended-absolute {
+                                                        display: flex;
+                                                        width: 70%;
+                                                        flex-direction: column;
+                                                        align-items: center;
+                                                        border-radius: 20px;
+                                                    }
+
+                                                    .character-modal {
+                                                        border-radius: 20px;
+                                                    }
+
+                                                    .name-modal {
+                                                        font-size: 30px !important;
+                                                    }
+
+                                                    .info-modal {
+                                                        align-items: center;
+                                                    }
+
+                                                    .gs-extended {
+                                                        font-size: 20px;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
