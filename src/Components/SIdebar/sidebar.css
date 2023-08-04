@@ -11,6 +11,17 @@
     padding: 0;
 }
 
+.off {
+    display: none;
+}
+
+.size-parent {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
 .menu-call,
 .last-bar {
     margin-left: 15px;

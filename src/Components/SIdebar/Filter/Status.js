@@ -4,11 +4,9 @@ import './filter.css';
 export const Status = ({ setStatus, setPage }) => {
     let status = ["Alive", "Dead", "Unknown"];
 
-    return (<details className="filter filter-species">
-        <div className="break"></div>
-        <summary className="span-title">Status</summary>
-        {
-            status.map((status, i) => (
+    return (
+        <>
+            {status.map((status, i) => (
                 <div key={i} className="checkbox">
                     <div className="flex-table">
                         <input onClick={(e) => {
@@ -20,7 +18,7 @@ export const Status = ({ setStatus, setPage }) => {
                         <label htmlFor={status}>{status}</label>
                     </div>
                 </div>
-            ))
-        }
-    </details >)
+            ))}
+        </>
+    )
 }

@@ -4,21 +4,21 @@ import './filter.css';
 export const Gender = ({ setGender, setPage }) => {
     let gender = ['Male', 'Female', 'Genderless', 'Unknown'];
 
-    return (<details className="filter filter-gender">
-        <summary className="span-title">Gender</summary>
-        <div className="break"></div>
-        {gender.map((gender, i) => (
-            <div key={i} className="checkbox">
-                <div className="flex-table">
-                    <input onClick={(e) => {
-                        if (e.target.checked === true) {
-                            setGender(e.target.id);
-                            setPage(1);
-                        }
-                    }} className="input-class" type="checkbox" id={gender} />
-                    <label htmlFor={gender}>{gender}</label>
+    return (
+        <>
+            {gender.map((gender, i) => (
+                <div key={i} className="checkbox">
+                    <div className="flex-table">
+                        <input onClick={(e) => {
+                            if (e.target.checked === true) {
+                                setGender(e.target.id);
+                                setPage(1);
+                            }
+                        }} className="input-class" type="checkbox" id={gender} />
+                        <label htmlFor={gender}>{gender}</label>
+                    </div>
                 </div>
-            </div>
-        ))}
-    </details>)
+            ))}
+        </>
+    )
 }

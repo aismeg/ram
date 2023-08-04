@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="parent">
-      <Mobile data={data} />
+      <Mobile data={data} openItem={openItem} />
       <Sidebar data={data} />
       {data.pages ?
         <>

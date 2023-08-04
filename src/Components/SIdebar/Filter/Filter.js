@@ -11,9 +11,21 @@ export const Filter = ({ setPage, setGender, setStatus, setType, setSpecies }) =
         </div>
         <div className="filter-list">
             <Type setPage={setPage} setType={setType} />
-            <Status setPage={setPage} setStatus={setStatus} />
-            <Gender setPage={setPage} setGender={setGender} />
-            <Species setPage={setPage} setSpecies={setSpecies} />
+            <details className="filter filter-species">
+                <summary className="span-title">Status</summary>
+                <div className="break"></div>
+                <Status setPage={setPage} setStatus={setStatus} />
+            </details>
+            <details className="filter filter-gender">
+                <summary className="span-title">Gender</summary>
+                <div className="break"></div>
+                <Gender setPage={setPage} setGender={setGender} />
+            </details>
+            <details className="filter filter-species">
+                <summary className="span-title">Species</summary>
+                <div className="break"></div>
+                <Species setPage={setPage} setSpecies={setSpecies} />
+            </details>
         </div>
     </div>
 )

@@ -16,21 +16,21 @@ export const Species = ({ setSpecies, setPage }) => {
         "Planet",
     ];
 
-    return (<details className="filter filter-species">
-        <summary className="span-title">Species</summary>
-        <div className="break"></div>
-        {species.map((species, i) => (
-            <div key={i} className="checkbox">
-                <div className="flex-table">
-                    <input onClick={(e) => {
-                        if (e.target.checked === true) {
-                            setSpecies(e.target.id);
-                            setPage(1);
-                        }
-                    }} className="input-class" type="checkbox" id={species} />
-                    <label htmlFor={species}>{species}</label>
+    return (
+        <>
+            {species.map((species, i) => (
+                <div key={i} className="checkbox">
+                    <div className="flex-table">
+                        <input onClick={(e) => {
+                            if (e.target.checked === true) {
+                                setSpecies(e.target.id);
+                                setPage(1);
+                            }
+                        }} className="input-class" type="checkbox" id={species} />
+                        <label htmlFor={species}>{species}</label>
+                    </div>
                 </div>
-            </div>
-        ))}
-    </details>)
+            ))}
+        </>
+    )
 }
