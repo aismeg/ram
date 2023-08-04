@@ -76,6 +76,28 @@
                                 position: unset;
                                 gap: 35px;
                             }
+
+                            @media (max-width: 515px) {
+                                .arrow {
+                                    width: 20px;
+                                }
+
+                                @media (max-width: 480px) {
+                                    .arrow {
+                                        width: 20px;
+                                    }
+
+                                    .arrows {
+                                        gap: 20px;
+                                    }
+
+                                    @media (max-width: 367px) {
+                                        .arrow {
+                                            width: 15px;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }

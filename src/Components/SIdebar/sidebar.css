@@ -249,6 +249,39 @@ input:focus {
                                     .filter-title {
                                         font-size: 26px;
                                     }
+
+                                    @media (max-width: 660px) {
+                                        .mob-input {
+                                            min-width: 250px !important;
+                                        }
+
+                                        @media (max-width: 515px) {
+                                            .menu-call-btn {
+                                                width: 65px;
+                                            }
+
+                                            @media (max-width: 480px) {
+                                                .mob-input {
+                                                    min-width: 150px !important;
+                                                }
+
+                                                .menu-call-btn {
+                                                    width: 50px;
+                                                }
+
+                                                @media (max-width: 367px) {
+                                                    .menu-call-btn {
+                                                        width: 40px;
+                                                    }
+
+                                                    .mob-input {
+                                                        max-width: 180px !important;
+                                                        height: 30px !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
