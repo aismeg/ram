@@ -1,5 +1,5 @@
 import React from "react";
-import '../src/App.css';
+import './App.css';
 import { Pagebar } from "./Components/Pagebar/Pagebar";
 import { Modal } from "./Components/Modal/Modal";
 import { Card } from "./Components/Card/Card";
