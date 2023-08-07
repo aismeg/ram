@@ -1,1 +1,1 @@
-use "npm start"
+use "npm start" in terminal to start.
