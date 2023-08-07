@@ -1,0 +1,304 @@
+.nav {
+    display: block;
+    height: 100vh;
+}
+
+.filter-parent {
+    background: #1b1b1d;
+    width: 100%;
+}
+
+.menu-call {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.off {
+    display: none !important;
+}
+
+.mob-input {
+    min-width: 350px !important;
+    height: 40px !important;
+}
+
+.size-parent {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+.menu-call,
+.last-bar {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu-call-btn {
+    width: 70px;
+}
+
+.nav-mobile {
+    display: none;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+}
+
+.crutch {
+    width: 85px !important;
+}
+
+.mobile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242526;
+    height: 100%;
+    max-height: 70px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px;
+}
+
+.nav-container {
+    padding: 22px;
+    position: fixed;
+    background-color: #242526;
+    height: 100vh;
+}
+
+.filter-list {
+    overflow-y: auto;
+    max-height: 510px;
+}
+
+.header {
+    height: auto;
+    max-width: 260px;
+}
+
+.icon {
+    fill: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-title {
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+    color: green;
+}
+
+.search-bar {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+[type="search"] {
+    height: auto;
+    background-color: #1f1f20;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 0px black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    box-shadow: unset;
+    background-color: #2f2f2f;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.filter-title {
+    margin-bottom: 5px;
+}
+
+.title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.break {
+    width: 80px;
+}
+
+.filter-title {
+    font-size: 24px;
+}
+
+.nav-container {
+    max-width: 300px;
+}
+
+.nav {
+    width: 300px;
+}
+
+[type="search"] {
+    max-width: 250px;
+    width: 250px;
+}
+
+.top-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media(max-width: 1770px) {
+    @media(max-width: 1630px) {
+        [type="search"] {
+            max-width: 205px;
+
+        }
+
+        .break {
+            width: 70px;
+        }
+
+        .nav-container {
+            max-width: 280px;
+        }
+
+        .nav {
+            width: 280px;
+        }
+
+        .filter-title {
+            font-size: 22px;
+        }
+
+        @media (max-width: 1500px) {
+            .nav {
+                width: 250px;
+            }
+
+            .nav-container {
+                max-width: 250px;
+            }
+
+            @media (max-width: 1440px) {
+                .filter-title {
+                    font-size: 20px;
+                }
+
+                @media (max-width: 1386px) {
+
+                    @media (max-width: 1320px) {
+
+                        .filter-title {
+                            font-size: 16px;
+                        }
+
+                        @media (max-width: 1200px) {
+                            @media (max-width: 1160px) {
+                                @media (max-width: 992px) {
+                                    .nav {
+                                        display: none;
+                                    }
+
+                                    .nav-title {
+                                        font-size: 30px;
+
+                                    }
+
+                                    .nav-mobile {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                    }
+
+                                    .filter-wrapper {
+                                        height: 100vh;
+                                        padding: 20px;
+                                    }
+
+                                    .search-bar {
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                    }
+
+                                    .sb-mobile {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        height: auto;
+                                    }
+
+                                    .filter-title {
+                                        font-size: 26px;
+                                    }
+
+                                    @media (max-width: 660px) {
+                                        .mob-input {
+                                            min-width: 250px !important;
+                                        }
+
+                                        @media (max-width: 515px) {
+                                            .menu-call-btn {
+                                                width: 65px;
+                                            }
+
+                                            .filter-title {
+                                                font-size: 20px;
+                                            }
+
+                                            @media (max-width: 480px) {
+                                                .mob-input {
+                                                    min-width: 150px !important;
+                                                }
+
+                                                .menu-call-btn {
+                                                    width: 50px;
+                                                }
+
+                                                @media (max-width: 400px) {
+                                                    .nav-title {
+                                                        font-size: 26px;
+                                                    }
+
+                                                    @media (max-width: 367px) {
+                                                        .menu-call-btn {
+                                                            width: 40px;
+                                                        }
+
+                                                        .mob-input {
+                                                            max-width: 180px !important;
+                                                            height: 30px !important;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

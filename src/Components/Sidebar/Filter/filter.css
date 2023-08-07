@@ -1,0 +1,129 @@
+.flex-table:hover {
+    background-color: #313131;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.flex-table {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.type-bar {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.filter {
+    padding-top: 5px;
+    height: auto;
+    max-width: 250px;
+    border-top: 1px solid white;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.break {
+    height: 0.1px;
+    width: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff8a;
+}
+
+.filter-type {
+    border-top: none;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+summary {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.span-title {
+    font-size: 18px;
+}
+
+label {
+    font-size: 15px;
+}
+
+@media(max-width: 1770px) {
+
+
+    @media(max-width: 1630px) {
+
+        .span-title {
+            font-size: 16px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        @media (max-width:1500px) {}
+
+        @media (max-width: 1440px) {
+            .span-title {
+                font-size: 14px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+
+            @media (max-width: 1386px) {
+
+                @media (max-width: 1320px) {
+                    .span-title {
+                        font-size: 13px;
+                    }
+
+                    .break {
+                        width: 50px;
+                    }
+
+                    label {
+                        font-size: 10px;
+                    }
+
+                    @media (max-width: 1203px) {
+                        @media (max-width: 1160px) {
+                            @media (max-width: 992px) {
+                                .flex-table:hover {
+                                    background-color: #242526;
+                                }
+
+                                .span-title {
+                                    font-size: 16px;
+                                }
+
+                                label {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
